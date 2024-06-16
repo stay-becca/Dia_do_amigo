@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebecca</title>
+ <link rel="stylesheet" type="text/css" href="estilo2.css">
+ <link rel="stylesheet" type="text/css" href="boostrap.css">
+</head>
+<body>
+    <header class="header"><a href="index.html" class="home">HOME</a>
+        <nav class="navbar">
+     
+            <a href="sala.html">Sala</a>
+     
+         </nav>
+    </header>
+    
+    <div class="box">
+        <div class="item"><img src="imagens/rebeccao1.jpg" alt=""></div>
+        <div class="item"><img src="imagens/rebeccao2.jpg" alt=""></div>
+        <div class="item"><img src="imagens/rebeccao3.jpg" alt=""></div>
+        <div class="item"><img src="imagens/rebeccao4.jpg" alt=""></div>
+        <div class="item"><img src="imagens/rebeccao5.jpg" alt=""></div>
+        <div class="item"><img src="imagens/rebeccao6.jpg" alt=""></div>
+        <div class="item"><img src="imagens/rebeccao7.jpg" alt=""></div>
+    </div>
+    <div class="buttons">
+        <span class="prev"></span>
+        <span class="next"></span>
+    </div>
+    <script>
+        let prev = document.querySelector('.prev')
+        let next = document.querySelector('.next')
+        next.addEventListener('click', 
+         function() { 
+        let items = document.
+        querySelectorAll('.item')
+        document.querySelector('.box').appendChild(items[0]) 
+    })
+        prev.addEventListener('click',
+            function() {
+                let items = document.querySelectorAll('.item')
+                document.querySelector('.box').prepend(items[items.length -1])
+            })
+
+    </script>
+</body>
+</html>

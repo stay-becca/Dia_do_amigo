@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #16384c;
+  }
+  
+  .container {
+    position: absolute;
+    width: 48%;
+    display: flex;
+    justify-content: right;
+    
+    
+  }
+  
+  .top{
+    color: aliceblue;
+    font-size: 26px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container .card {
+    display: flex;
+    margin: 270px;
+    position: absolute;
+    width: 240px;
+    height: 350px;
+    background: wheat;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    justify-content: left;
+  }
+  
+  .container .card img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.5s;
+    justify-content: right;
+  }
+  
+  .container:hover .card {
+    transform: rotate(calc(var(--i) * 2deg)) translate(calc(var(--i) * 200px));
+  }
+  
+  .container:hover .card img {
+    opacity: 8;
+    box-shadow: 50px;
+  }
+  
+  .container .card:hover {
+    translate: calc(var(--i) * 20px) -50px;
+    z-index: 10;
+  }
+  
+   .container .card::hover img {
+    
+    opacity: 1;
+    }
+    
+    .container .card::before{
+      content: attr(data-text);
+      position: absolute;
+      top: 0%;
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      letter-spacing: 0.15em;
+      color: aliceblue;
+      font-weight: 500;
+      transition: 0.5s;
+      z-index: 100;
+      opacity: 0;
+      text-align: center;
+      transform: translateY(133px);
+    }
+  
+    .container .card:hover:before{
+      top: -40px;
+      opacity: 1;
+      transform: rotateY(0);
+    }
+  
+    .container{
+      bottom: 90%;
+    }
+  
+   h2{
+    color: aliceblue;
+    justify-content: left;
+    align-items: end;
+    }
+  
+  
+  .header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .home{
+    font-size: 25px;
+    color: #16384c;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .navbar a{
+    font-size: 25px;
+    color: #16384c;
+    text-decoration: none;
+    font-weight: 700;
+  }
+    
+  
+    
+  h2{
+    color: aliceblue;
+    position: absolute;
+    transform: translateY(-400%);
+  }
+  
+  .vidd .vid video source{
+    background-color: antiquewhite;
+  }
+  
+  .video .video2{
+    width: 100%;
+    border-radius: 2px;
+    align-items: right;
+    display: flexbox;
+    width: 40%;
+   
+  }
+  
+  .simsim{
+    background-color: rgb(129, 110, 85);
+    height: 1000px;
+    width:30%;
+  }
